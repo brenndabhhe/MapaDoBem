@@ -1,0 +1,79 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Body */
+body {
+  background: #f1f5f9;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background: #2563eb;
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Map Section */
+.map-section {
+  margin: 20px 0;
+}
+
+.map-placeholder {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Actions */
+.actions {
+  margin: 20px 0;
+}
+
+.actions button {
+  background: #10b981;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  margin: 10px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.actions button:hover {
+  background: #059669;
+}
+
+/* Points Section */
+.points {
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #555;
+}
