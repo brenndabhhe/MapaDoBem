@@ -4,34 +4,83 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mapa do Bem</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #001f3f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .btn {
+      background-color: #ffc107;
+      color: black;
+      border: none;
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #e0a800;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #001f3f;
+      color: white;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>📱 Mapa do Bem</h1>
-    <p>Conectando quem quer ajudar a quem mais precisa</p>
+    <h1>Mapa do Bem</h1>
+    <p>Conectando solidariedade com tecnologia</p>
   </header>
 
-  <main>
-    <section class="map-section">
-      <img src="https://i.imgur.com/5Kjzv7x.png" alt="Mapa do Bem" class="map-placeholder">
-    </section>
+  <div class="container">
+    <div class="card">
+      <h2>Locais que precisam de ajuda:</h2>
+      <ul>
+        <li>Casa de Apoio Esperança (Doações de alimentos)</li>
+        <li>ONG Cuidar é Amar (Precisa de voluntários)</li>
+        <li>Orfanato Luz do Amanhã (Necessita roupas infantis)</li>
+      </ul>
+    </div>
 
-    <section class="actions">
-      <button onclick="addPoints(10)">✨ Doar Agora</button>
-      <button>📍 Ver Instituições</button>
-      <button>👤 Meu Perfil</button>
-    </section>
+    <div class="card">
+      <h2>Quero contribuir com:</h2>
+      <button class="btn">Doar dinheiro</button>
+      <button class="btn">Doar alimentos</button>
+      <button class="btn">Ser voluntário</button>
+    </div>
 
-    <section class="points">
-      <p><strong>Pontos de Herói:</strong> <span id="heroPoints">0</span></p>
-    </section>
-  </main>
+    <div class="card">
+      <h2>Minhas ações recentes:</h2>
+      <ul>
+        <li>Você doou R$ 50 para ONG Cuidar é Amar</li>
+        <li>Você se voluntariou para Casa de Apoio Esperança</li>
+      </ul>
+    </div>
+  </div>
 
   <footer>
-    <p>Mapa do Bem © 2025 – Protótipo para IDEATHON SENAC ST</p>
+    <p>© 2025 Mapa do Bem – Um projeto de Caio e Brennda</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
